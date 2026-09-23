@@ -10,8 +10,17 @@
     {
       "source": "/admin",
       "destination": "/admin.html"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/api/static-asset/:path*"
     }
   ],
+  "functions": {
+    "api/static-asset/[...path].js": {
+      "includeFiles": "assets/**"
+    }
+  },
   "headers": [
     {
       "source": "/api/(.*)",
