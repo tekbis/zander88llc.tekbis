@@ -10,6 +10,10 @@
     {
       "source": "/admin",
       "destination": "/admin.html"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "https://cdn.jsdelivr.net/gh/tekbis/zander88llc.tekbis@main/assets/:path*"
     }
   ],
   "headers": [
